@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Cores - Gerador de paleta de cores gratuito</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../IMG/favicon2.png" type="image/png"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!--Inicio do Header-->
+        <header class="header">
+        <div class="divp">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;"><img src="../IMG/nuvem.png"></a>
+            </div>
+            <nav class="menu">
+                <!-- Inicio dos Links -->
+                <a href="#"><i class="fa fa-picture-o" aria-hidden="true" style="margin-right: 5px;"></i>Utilizar uma imagem </a> 
+                <a href="#"><i class="fa fa-instagram" style="margin-right: 5px;"></i>Extrair cores do Instagram</a>
+                <!-- Inicio da Lista de Cores -->
+                <div id="cores">
+                    <button id="corButton" onclick="mostrarCores()">Outras Cores<i class="fa fa-plus-circle" id="seta"></i></button>
+                    <ul id="opcoesCores" class="opcoesCores">
+                        <a href="#"><li onclick="escolherCor('Vermelho')">Vermelho</li></a>
+                        <a href="#"><li onclick="escolherCor('Azul')">Azul</li></a>
+                        <a href="#"><li onclick="escolherCor('Verde')">Verde</li></a>
+                        <a href="#"><li onclick="escolherCor('Roxo')">Roxo</li></a>
+                        <a href="#"><li onclick="escolherCor('Laranja')">Laranja</li></a>
+                        <a href="#"><li onclick="escolherCor('Preto')">Preto</li></a>
+                        <a href="#"><li onclick="escolherCor('Branco')">Branco</li></a>
+                    </ul>
+                </div>
+                <!-- Fim da Lista de Cores -->
+                <a href="#">Outras ferramentas</a>
+                <a href="#" id="botao">Criar loja grátis</a>
+                <!-- Final dos Links -->
+            </nav>
+        </div>
+        </header>
+
+    <!--Final do Header-->
+    <!--Incio da main-->
+    <main class="main">
+        <div class="main1">
+            <!--Inicio da Sec1-->
+            <section class="sec1">
+                <p>Faça como a Me.Mo.</p>
+                <h2>A melhor forma de estilizar seu site é com as nossas paletas de cores</h2>
+                <div>
+                    <a href="#" id="botao1">Gerar paleta de cores</a>
+                    <a href="#" id="botao2">Criar loja grátis</a>
+                </div>
+            </section>
+            <!--Final da Sec1-->
+            <!--Inicio da Sec2-->
+            <section class="sec2" id="imagemContainer">
+                <button id="setaEsquerda" onclick="trocarImagem(-1)">&#8249;</button>
+                <div id="imagemAtual">
+                    <img src="../IMG/slide-2-pt-br.webp">
+                </div>
+                <div id="novaImagem" style="display: none;">
+                    <img src="../IMG/slide-1-pt-br.webp">
+                </div>
+                <button id="setaDireita" onclick="trocarImagem(1)">&#8250;</button>
+            </section>
+            <!--Final da Sec2-->
+        </div>
+    </main>
+    <!--Final da Main-->
+    <script src="../JS/main.js"></script>
+
+</body>
+</html>

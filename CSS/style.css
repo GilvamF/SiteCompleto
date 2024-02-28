@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Config Gerais*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+    font-family: 'Lato', sans-serif;
+}
+/*Inicio do Menu*/
+.header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+}
+
+.divp{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    width: 25%;
+    background-color: white;
+
+}
+
+.menu{
+    display: flex;
+    width: 75%;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a{
+    padding: 8px 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    transition: 0.5s;
+    color: #0156a1;
+}
+
+#botao{
+    color: white;
+    background-color: #0156a1;
+    font-size: 17px;
+    border-radius: 23px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #0156a1;
+}
+
+#botao:hover{
+    color: #0156a1;
+    transition: 0.6s;
+    background-color: white;
+}
+
+/*Fim do Menu*/
+/*Inicio do Main*/
+
+.main{
+    background-color: white;
+    height: 800px;
+    width: 100%;
+}
+
+.main1{
+    font-weight: bold;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+}
+.sec1{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    align-items: start;
+    background-color: white;
+    width: 45%;
+}
+
+.sec1 h2{
+    color: #553030;
+    font-size: 68px;
+    font-weight: 600;
+    margin-left: 5px;
+    line-height: 77px;
+}
+.sec1 div{
+    margin-top: 34px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.sec1 a{
+    text-decoration: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-right: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    border-radius: 27px;
+    border: 1px solid #0156a1;
+
+}  
+
+#botao1{
+    font-size: 17px;
+    font-weight: 500;
+    color: #0156a1;
+}
+#botao1:hover{
+    background-color: #0156a1;
+    color: white;
+    transition: 0.7s;
+}
+
+#botao2 {
+    background-color: #0156a1;
+    font-weight: 500;
+    color: white;
+}
+
+#botao2:hover{
+    background-color: white;
+    color: #0156a1;
+    transition: 0.7s;
+}
+.sec2{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
+.sec2 img{
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+
+#imagemContainer {
+    position: relative;
+    text-align: center;
+}
+
+#setaEsquerda, #setaDireita {
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+#setaEsquerda {
+    border: 1px solid #0156a1;
+    color: #0156a1;
+    padding: 10px 20px;
+    border-radius: 70px;
+    left: 50px;
+}
+
+#setaDireita {
+    right: 50px;
+    border: 1px solid #0156a1;
+    padding: 10px 20px;
+    border-radius: 70px;
+    color: #0156a1;
+}
+
+#setaEsquerda:hover{
+    background-color: #0156a1;
+    color: white;
+    transition: 0.7s;
+}
+
+#setaDireita:hover{
+    background-color: #0156a1;
+    color: white;
+    transition: 0.7s;
+}
+/*Fim do Main*/
+/*  Botão de Escolhe as Cores  */
+
+#cores {
+    margin-bottom: 14px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#corButton{
+    display: flex;
+    width: 75%;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+#corButton {
+    padding: 8px 6px;
+    color: black;
+    width: 130px;
+    font-weight: 100;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#opcoesCores {
+    width: 270px;
+    left: 1145px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    list-style: none;
+    padding: 16px;
+    cursor:pointer;
+    margin: 10px 0;
+}
+
+#opcoesCores a {
+    text-decoration: none;
+    color: #333;
+}
+
+#opcoesCores li {
+    display: flex;
+    width: 250px;
+    background-color: transparent;
+    padding: 16px;
+    margin: -10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#opcoesCores li:hover {
+    height: 100%;
+    background-color: #080e38;
+    color: white;
+}
+
+#seta {
+    margin-left: 7px;
+}
